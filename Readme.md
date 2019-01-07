@@ -1,10 +1,10 @@
 # netaggregate
 
-netaggregate is a program to aggregate/summarize a list of IPv6 or IPv4 networks/addresses.
-It expects correct IPv6 or IPv4 networks or address/length combination on stdint and outputs results of aggregation to stdout.
-One can mix IPv6 and IPv4 addresses/networks.
+netaggregate is a tool to aggregate/summarize a list of IPv6 or IPv4 networks, addresses, CIDRs, prefixes.
+It expects IPv6 or IPv4 networks or address/length combination on stdint and outputs results of the aggregation to stdout.
+One can mix IPv6 and IPv4.
 IPs without mask are considered having prefix length of /128 and /32 respectively.
-If address/length is supplied address part is truncated to the correct network, i.e. bits are zeroed to match the length.
+If address/length is supplied, address part is truncated to the correct network prefix, i.e. bits are zeroed to match the length.
 Example of the input:
 ```
 2001:DB8::/120

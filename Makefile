@@ -1,2 +1,5 @@
 netaggregate: netaggregate.cpp
-	c++ -O2 -o netaggregate netaggregate.cpp
+	c++ -O3 -o netaggregate netaggregate.cpp
+
+clean:
+	rm netaggregate
