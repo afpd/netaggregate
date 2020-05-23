@@ -31,5 +31,5 @@
 *.out
 *.app
 
-#netaggregate on *nix
+# netaggregate on *nix
 netaggregate
