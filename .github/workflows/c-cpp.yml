@@ -17,4 +17,9 @@ jobs:
       run: make
     - name: test
       run: make test
+    - name: Use the Upload Artifact GitHub Action
+      uses: actions/upload-artifact@v2
+      with: 
+        name: static-build
+        path: ./netaggregate
 
